@@ -65,9 +65,9 @@ if submitted:
 
     
     gen_resp = requests.post("https://tweet-backend-zoll.onrender.com/generate_smart_tweet", json=gen_payload)
-    if gen_resp.ok and "generated_tweet" in gen_resp.json():
-        generated_tweet = gen_resp.json()["generated_tweet"]
-        st.markdown(f"**Generated Tweet:**\n\n{generated_tweet}")
+    if gen_resp.ok and "tweet" in gen_resp.json():
+        tweet = gen_resp.json()["tweet"]
+        st.markdown(f"**Generated Tweet:**\n\n{tweet}")
     else:
         st.error("Failed to generate tweet.")
         st.text(gen_resp.text)
@@ -83,8 +83,8 @@ if submitted:
 
     
     pred_payload = {
-        "word_count": len(generated_tweet.split()),
-        "char_count": len(generated_tweet),
+        "word_count": len(tweet.split()),
+        "char_count": len(tweet),
         "has_media": 1 if has_media else 0,
         "hour": hour,
         "day_of_week": 2, 
@@ -102,6 +102,7 @@ if submitted:
     else:
         st.error("Failed to predict likes.")
         st.text(pred_resp.text)
+
 
 
 

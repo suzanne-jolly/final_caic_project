@@ -26,7 +26,7 @@ Generate tweets and predict their engagement using AI!
 
 ## 🚀 Run locally
 ```bash
-git clone https://github.com/yourusername/final_caic_project
+git clone https://github.com/suzanne-jolly/final_caic_project
 cd final_caic_project
 pip install -r requirements.txt
 streamlit run streamlit_app.py

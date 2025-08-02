@@ -5,7 +5,7 @@ import pandas as pd
 from tweet_generator import SimpleTweetGenerator
 from textblob import TextBlob
 
-# Load your model directly (no separate API needed)
+
 @st.cache_resource
 def load_model():
     return joblib.load('like_predictor.pkl')
@@ -102,6 +102,7 @@ if submitted:
     else:
         st.error("Failed to predict likes.")
         st.text(pred_resp.text)
+
 
 
 

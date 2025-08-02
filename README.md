@@ -10,7 +10,7 @@ Generate tweets and predict their engagement using AI!
 - **Interactive UI** for testing different inputs
 
 ## 🔗 Try it live
-**[Live Demo](your-deployment-url)**
+**[Live Demo](https://tweet-frontend-lhqc.onrender.com/)**
 
 ## 🛠️ Tech Stack
 - Python
@@ -26,10 +26,10 @@ Generate tweets and predict their engagement using AI!
 
 ## 🚀 Run locally
 ```bash
-git clone https://github.com/yourusername/tweet-intelligence-engine
-cd tweet-intelligence-engine
+git clone https://github.com/yourusername/final_caic_project
+cd final_caic_project
 pip install -r requirements.txt
-streamlit run app.py
+streamlit run streamlit_app.py
 ```
 
 ## 📈 Built during

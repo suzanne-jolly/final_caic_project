@@ -38,7 +38,7 @@ class SimpleTweetGenerator:
 
         return tweet[:280]
 
-# Instantiate your class
+
 tweet_generator = SimpleTweetGenerator()
 
 @app.route('/generate_smart_tweet', methods=['POST'])
@@ -93,5 +93,6 @@ def predict():
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
+
 
 
